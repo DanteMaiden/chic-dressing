@@ -1,0 +1,18 @@
+2023-12-12T21:33:58+00:00 CRITICAL Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\file.php:161
+Stack trace:
+#0 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\file.php(161): implode(Array, '|')
+#1 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\core\base.php(820): WYSIJA_help_file->clear()
+#2 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(184): WYSIJA::croned_daily()
+#3 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\core\base.php(1525): WYSIJA_help_cron->run()
+#6 C:\wamp64\www\Chic-Dressing\wp-includes\class-wp-hook.php(308): init_wysija_cron('')
+#7 C:\wamp64\www\Chic-Dressing\wp-includes\class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#8 C:\wamp64\www\Chic-Dressing\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#9 C:\wamp64\www\Chic-Dressing\wp-settings.php(623): do_action('init')
+#10 C:\wamp64\www\Chic-Dressing\wp-config.php(98): require_once('C:\\wamp64\\www\\C...')
+#11 C:\wamp64\www\Chic-Dressing\wp-load.php(50): require_once('C:\\wamp64\\www\\C...')
+#12 C:\wamp64\www\Chic-Dressing\wp-cron.php(46): require_once('C:\\wamp64\\www\\C...')
+#13 {main}
+  thrown dans C:\wamp64\www\Chic-Dressing\wp-content\plugins\wysija-newsletters\helpers\file.php à la ligne 161
+
